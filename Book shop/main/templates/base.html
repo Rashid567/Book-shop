@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+        <title>Book shop</title>
+    {% endblock %}
+  </head>
+  <body>
+    <h1>Book shop</h1>
+    <div>
+      <form action="/new-order" method="post" accept-charset="utf-8">
+
+          <label for="user">User-id</label>
+          <input id="user" name="user" type="text" value="" autofocus/>
+          <label for="book">Book-id</label>
+          <input id="book" name="book" type="text" value=""/>
+          <label for="number">Book quantity</label>
+          <input id="number" name="number" type="text" value=""/>
+          <label for="shop">Shop-id</label>
+          <input id="shop" name="shop" type="text" value=""/>
+
+          <input type="submit" value="Add order"/>
+      </form>
+    </div>
+  </body>
+</html>
